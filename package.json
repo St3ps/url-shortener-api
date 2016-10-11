@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "url-shortener",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
   },
   "main": "app.js",
   "devDependencies": {},
-  "author": "",
+  "author": "St3ps",
+  "repository": "https://github.com/St3ps/url-shortener-api.git",
   "license": "ISC",
   "description": ""
 }
