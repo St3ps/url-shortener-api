@@ -87,6 +87,6 @@ exports.shortr = function (req, res) {
 
 
 exports.index = function(req, res){
-  console.log(process.env.MONGOLAB_URI);
+  
   res.render('index', { title: 'Steps URL Shortener API' });
 };
