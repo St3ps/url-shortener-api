@@ -20,7 +20,7 @@ exports.urlcatch = function(req, res, next){
           collection.findOne({ "url": params }, { url: 1, short: 1, _id: 0 }, function(err, doc) {
             if(doc) {
               console.log("URL already exists in db");
-              res.json({original_url: doc.url, short_url: doc.short_url})
+              res.json({original_url: doc.url, short_url: doc.short, msg: "This was already in DB"});
               } else {
                   if (validUrl.isUri(params)) {
                     var shortCode = shortid.generate();
