@@ -3,7 +3,7 @@ var config = require('../config.js');
 var shortid = require('shortid');
 var validUrl = require('valid-url');
 
-var mLab = 'mongodb://' + config.db.host + '/' + config.db.name;
+var mLab = process.env.MONGOLAB_URI;
 
 exports.urlcatch = function(req, res, next){
     
@@ -87,5 +87,6 @@ exports.shortr = function (req, res) {
 
 
 exports.index = function(req, res){
+  console.log(process.env.MONGOLAB_URI);
   res.render('index', { title: 'Steps URL Shortener API' });
 };
