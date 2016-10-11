@@ -1,0 +1,21 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "*",
+    "mongodb": "^2.2.10",
+    "nodemon": "^1.11.0",
+    "shortid": "^2.2.6",
+    "valid-url": "^1.0.9"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
