@@ -26,7 +26,7 @@ exports.urlcatch = function(req, res, next){
                     var shortCode = shortid.generate();
                     var newUrl = { url: params, short: shortCode };
                     collection.insert([newUrl]);
-                    res.json({ original_url: params, short_url: "localhost:8080/" + shortCode})
+                    res.json({ original_url: params, short_url: shortCode })
                   } else {
                     res.json({ error: "Wrong url format!"});
                   }
