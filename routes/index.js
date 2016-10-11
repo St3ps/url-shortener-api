@@ -1,5 +1,5 @@
 var mongo = require('mongodb').MongoClient;
-var config = require('../config.js');
+// var config = require('../config.js');
 var shortid = require('shortid');
 var validUrl = require('valid-url');
 
