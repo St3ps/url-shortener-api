@@ -3,8 +3,12 @@ extends layout
 block content
   h1= title
   p This was done in context of FCC's Node.js API challenges and a big credit for the code should go for Michael Lefkowitz! You can find his url-shortening tutorial here: 
-  a http://lefkowitz.me/thoughts/2016/05/05/men-stack-building-a-url-shortener-with-mongodb-express-and-node-js/
-  p To make your url shortened just type your url(don't forget the protocol) after 'new/'.
-   for example: new/http://www.freecodecamp.com 
-  p Afterwards just copy and paste the shortcode in place of the original url.
+  a http://lefkowitz.me/thoughts/2016/05/05/men-stack-building-a-url-shortener-with-mongodb-express-and-node-js/ br
+  p To make your short-url: 
+   pre= example_short
+  p If your URL is correct (don't forget the http / https part) you should get a JSON response with both the original url and the short code
+    pre=example_json
+  p To use your short URL:
+    pre=example_shortened
+    p And that's it! You should be redirected to your original URL.
   

@@ -2,6 +2,7 @@ var mongo = require('mongodb').MongoClient;
 // var config = require('../config.js');
 var shortid = require('shortid');
 var validUrl = require('valid-url');
+var path = require('path');
 
 var mLab = process.env.MONGOLAB_URI;
 
@@ -87,6 +88,10 @@ exports.shortr = function (req, res) {
 
 
 exports.index = function(req, res){
-  
-  res.render('index', { title: 'Steps URL Shortener API' });
+ 
+  res.render('index', { title: 'Steps URL Shortener API', 
+  example_short: req.headers.referer + '/new/http://www.freecodecamp.com', 
+  example_json: '{"original_url":"http://www.freecodecamp.com","short_url":"Sysxzto0"}',
+  example_shortened: req.headers.referer + '/Sysxzto0'
+  } );
 };
